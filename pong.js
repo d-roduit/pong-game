@@ -1,6 +1,6 @@
 
-let canvas = document.getElementsByTagName('canvas')[0];
-let startButton = document.getElementsByTagName('button')[0];
+const canvas = document.getElementsByTagName('canvas')[0];
+const startButton = document.getElementsByTagName('button')[0];
 
 /*-----------------
 >>> CANVAS
@@ -8,7 +8,7 @@ let startButton = document.getElementsByTagName('button')[0];
 canvas.width = window.innerWidth / 2;
 canvas.height = window.innerHeight / 1.5;
 
-let c = canvas.getContext('2d');
+const c = canvas.getContext('2d');
 
 
 let objetsADessiner = [];
@@ -24,6 +24,7 @@ function createGameObjects() {
 		get x() { return (canvas.width / 2) - (this.width / 2) },
 		y: 5,
 		dx: 10,
+		color: '#34495e',
 		modeAutoplay: true
 	}
 
@@ -32,13 +33,14 @@ function createGameObjects() {
 		height: 5,
 		get x() { return (canvas.width / 2) - (this.width / 2) },
 		get y() { return canvas.height - (barre1Settings.y + this.height) },
-		dx: 10
+		dx: 10,
+		color: '#34495e'
 	}
 
-	// Créé la barre du joueur 1
+	// Crée la barre du joueur 1
 	barre[0] = new Barre(barre1Settings);
 
-	// Créé la barre du joueur 2
+	// Crée la barre du joueur 2
 	barre[1] = new Barre(barre2Settings);
 
 	// Caractéristiques de la balle
@@ -48,10 +50,11 @@ function createGameObjects() {
 		radius: 5,
 		dx: Math.floor(Math.random() * (3.4 - (-3.4) + 1)) + (-3.4),
 		dy: 3.4,
+		color: '#d35400',
 		barre
 	}
 
-	// Créé la balle
+	// Crée la balle
 	balle = new Balle(balleSettings);
 
 	// Vide le tableau des objets qui ont toujours leurs anciennes caractéristiques (placement, etc)
@@ -89,7 +92,7 @@ function countBeforeGameStart(timer) {
 		let timeInterval = setInterval(() => {
 			// On remet à zéro le canvas
 			clearCanvas();
-			
+
 			// On dessine tous les objets dans le canvas
 			drawObjectsOnCanvas(objetsADessiner);
 
@@ -100,12 +103,13 @@ function countBeforeGameStart(timer) {
 			let timerTextSettings = {
 				text: timer,
 				x: canvas.width / 2,
-				y: canvas.height / 2 
+				y: canvas.height / 2,
+				color: '#2c3e50'
 			}
 
 			let timerText = new Text(timerTextSettings);
 			timerText.write();
-		  
+
 			if(timer === 'Start') {
 				// On arrête la boucle du timer
 				clearInterval(timeInterval);
@@ -127,20 +131,21 @@ function launchGame() {
 	updateObjectsOnCanvas(objetsADessiner);
 
 	drawObjectsOnCanvas(objetsADessiner);
-	
+
 
 	// Fonction de debug pour connaitre les positions de la balle et de la barre[1]
 	// debugWhenBallTouchBarre2();
 
 	let game = requestAnimationFrame(launchGame);
-	
+
 	if(balle.touchBorder('bottom') || balle.touchBorder('top')) {
 		cancelAnimationFrame(game);
 
 		let endOfGameTextSettings = {
 				text: '',
 				x: canvas.width / 2,
-				y: (canvas.height / 2) + 15
+				y: (canvas.height / 2) + 15,
+				color: '#2c3e50'
 			}
 
 		let endOfGameText = new Text(endOfGameTextSettings);
@@ -176,15 +181,8 @@ startButton.addEventListener('click', () => {
 
 
 
-
 /**
- * À faire
- * 
-	[] La barre1 joue toute seule
-	[] Faire en sorte que la balle puisse partir soit en haut soit en bas au début
-	
+ * TODO
+ * Faire en sorte que la balle puisse partir soit en haut soit en bas au début
+ * Résoudre l'injection de dépendance du contexte, à travers la variable "c"
  */
-
-
-
-

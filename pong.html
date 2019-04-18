@@ -3,45 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pong Game</title>
-	
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			height: 80vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		canvas {
-			border-left: 1px solid black;
-			border-right: 1px solid black;
-			display: block;
-			max-width: 640px;
-			max-height: 406px;
-		}
-
-		button {
-			position: absolute;
-			top: 100px;
-			left: 100px;
-		}
-
-	</style>
-
+	<link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 <body>
-	<button>Start</button>
+	<button>Start Game</button>
 	<canvas></canvas>
 
-	<script src="Text.js"></script>
-	<script src="Barre.js"></script>
-	<script src="Balle.js"></script>
+	<script src="classes/Text.js"></script>
+	<script src="classes/Barre.js"></script>
+	<script src="classes/Balle.js"></script>
 	<script src="functions.js"></script>
 	<script src="pong.js"></script>
 </body>
