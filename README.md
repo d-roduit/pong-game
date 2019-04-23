@@ -1,4 +1,7 @@
 # Pong Game
+
+## Screenshots
+
 Pong Game Design
 ![Pong Game Screenshot](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot.jpg "Pong Game")
 
