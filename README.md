@@ -1,6 +1,6 @@
 # Pong Game
-![alt text](https://github.com/d-roduit/pong-game/blob/master/screenshot.jpg "Pong Game")
-![alt text](https://github.com/d-roduit/pong-game/blob/master/screenshot-lost.jpg "Pong Game lost")
+![alt text](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot.jpg "Pong Game")
+![alt text](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot-lost.jpg "Pong Game lost")
 
 ## How to play ?
 
