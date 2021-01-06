@@ -1,7 +1,7 @@
 # Pong Game
 
 
-**<h3 align="center">Try this pong game at https://d-roduit.github.io/pong-game/ !</h3>**
+**<h3 align="center">Try this pong game at [https://d-roduit.github.io/pong-game/index.html](https://d-roduit.github.io/pong-game/index.html) !</h3>**
 
 
 ## A fun experiment
@@ -19,10 +19,10 @@ Anyway, **have fun** playing with the dumb opponent player.
 ## Screenshots
 
 Pong Game while playing
-![Pong Game Screenshot](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot.jpg "Pong Game")
+![Pong Game Screenshot](screenshots/screenshot.jpg "Pong Game")
 
 Pong Game when player has lost
-![Pong Game lost Screenshot](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot-lost.jpg "Pong Game lost")
+![Pong Game lost Screenshot](screenshots/screenshot-lost.jpg "Pong Game lost")
 
 ## How to play ?
 
