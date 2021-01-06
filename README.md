@@ -1,11 +1,27 @@
 # Pong Game
 
+
+**<h3 align="center">Try this pong game at https://d-roduit.github.io/pong-game/ !</h3>**
+
+
+## A fun experiment
+I created this very simple pong game when I had free time in the public transport.
+
+The main goal was to experiment and play with the HTML5 canvas features.
+
+This game was not completely finished at the time I stopped developing it to devote myself to other more important real projects.
+
+I still wish to make it work like a real basic pong should work and add it a multiplayer mode though.
+
+Anyway, **have fun** playing with the dumb opponent player.
+
+
 ## Screenshots
 
-Pong Game Design
+Pong Game while playing
 ![Pong Game Screenshot](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot.jpg "Pong Game")
 
-Pong Game Lost Design
+Pong Game when player has lost
 ![Pong Game lost Screenshot](https://github.com/d-roduit/pong-game/blob/master/screenshots/screenshot-lost.jpg "Pong Game lost")
 
 ## How to play ?
